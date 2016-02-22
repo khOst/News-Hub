@@ -1,0 +1,312 @@
+$primary-color: #72a7d8;
+
+@font-face {
+	src: url('../fonts/OpenSans-Regular.ttf');
+	font-family: OpenSans;
+}
+
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+body {
+	font-family: OpenSans, sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul,ol {
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
+//Header
+header {
+	background-color: $primary-color;
+	padding: 6px 0;
+	height: 60px;
+
+}
+
+.header__logo, nav {
+	display: inline-block;
+	z-index: 100;
+}
+
+.header__logo {
+	float: left;
+	width: 25%;
+	img,
+	h1 {
+		display: inline-block;
+		color: #fff;
+	}
+	h1 {
+		line-height: 1;
+		margin: 0;
+		margin-left: 15px;
+		margin-right: 15px;
+		vertical-align: middle;
+		font-weight: normal;
+		font-size: 23px;
+	}
+}
+
+nav {
+	width: 75%;
+	text-align: right;
+	ul, 
+	input {
+		display: inline-block;
+	}
+	ul {
+		margin-left: 45px;
+	}
+	li {
+		display: inline-block;
+		margin-left: 12px;
+		&:first-child {
+			margin-left: 0;
+		}
+		a {
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+	label {
+		position: relative;
+		input {
+			width: 60%;
+			height: 30px;
+			padding-left: 12px;
+		}
+		img {
+			position: absolute;
+			top: 50%;
+			margin-top: -7px;
+			right: 12px;
+			color: $primary-color;
+		}
+	}
+}
+
+.search--wrap {
+	background-color: #2f85c0;
+	display: none;
+}
+.search {
+	position: relative;
+	input {
+		width: 100%;
+		height: 30px;
+		padding-left: 12px;
+		margin: 20px 0;
+	}
+	img {
+		position: absolute;
+		top: 50%;
+		margin-top: -7px;
+		right: 12px;
+		color: $primary-color;
+	}
+}
+
+.mobile {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	.mobile--search,
+	.mobile--menu {
+		display: none;
+		background: url('/img/header_sprite.png') no-repeat;
+		width: 20px;
+		height: 20px;
+		z-index: 111;
+	}
+	.mobile--search {
+		background-position: -1px -19px;
+	}
+}
+
+.opa {
+	opacity: .6;
+}
+.mobile .closed {
+	background-position: -20px 1px;
+}
+.mobile .open {
+	background-position: 1px 1px;
+}
+
+.nav--wrap {
+	position: fixed;
+	z-index: 3;
+	width: 50%;
+	height: 100%;
+	right: 0;
+	text-align: right;
+	background-color: #2f85c0;
+	display: none;
+	ul li {
+		padding: 5px 0;
+		a {
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+}
+.shown {
+	display: block;
+}
+
+//Gallery
+.gallery {
+	position: relative;
+	padding: 30px 0;
+	// max-height: 690px;
+	.gallery__item {
+		float: left;
+		width: 18%;
+		margin: 2% 1%;
+		text-align: center;
+		cursor: pointer;
+		img {
+			max-width: 100%;
+		}
+		figcaption {
+			text-align: center;
+			color: $primary-color;
+			font-size: 20px;
+		}
+	}
+}
+
+// Footer
+footer {
+	padding: 20px 0;
+	background-color: #444;
+	.footer__links,
+	.footer__steps,
+	.footer__contacts {
+		float: left;
+		width: 23.3%;
+	}
+	.footer__social {
+		float: left;
+		width: 30%;
+		a {
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			background: url('/img/icons_sprite.png') no-repeat;
+			margin-bottom: 15px;
+			margin-right: 50px;
+		}
+		.twitter,
+		.pinterest-square,
+		.youtube {
+			margin-bottom: 20px;
+		}
+		.pinterest-square {
+			background-position: -36px 0;
+		}
+		.youtube {
+			background-position: -72px 0;
+		}
+		.facebook {
+			background-position: -108px 0;
+		}
+		.google-plus {
+			background-position: -144px 0;
+		}
+		.instagram {
+			background-position: -180px 0;
+		}
+		
+	}
+	h2 {
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #989898;
+	}
+	
+	li {
+		font-size: 11px;
+		color: #b3b3b3;
+		line-height: 1.8;
+		a {
+			color: #72a7d8;
+			&:hover {
+				color: #91d4f9;
+			}
+		}
+		.target {
+			padding-right: 5px;
+		}
+	}
+}
+
+
+// HIDDEN
+.wrap {
+	display: none;
+	background-color: rgba(47,133,191,.6);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 4;
+}
+.item__info {
+	display: none;
+	max-width: 570px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 5;
+	background-color: #fff;
+	color: #535353;
+	#close {
+		height: 60px;
+		padding: 20px 20px;
+		background-color: #2f85bf;
+		div {
+			background: url('/img/header_sprite.png') no-repeat;
+			background-position: -20px 1px;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+			float: right;
+
+		}
+
+	}
+	.content {
+		padding: 0 22px 20px;
+		font-size: 16px;
+		h3 {
+			font-size: 24px;
+			font-weight: normal;
+			margin: 10px 0 15px 0;
+			margin-left: 0;
+		}
+		img {
+			float: left;
+			width: 285px;
+			height: 285px;
+			margin-right: 20px;
+			margin-bottom: 5px;
+		}
+	}
+}

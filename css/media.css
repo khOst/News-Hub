@@ -1,0 +1,141 @@
+@media only screen and (max-width: 1200px) {
+  .item__info .content {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header__logo {
+    width: 30%;
+  }
+  nav {
+    width: 70%;
+  }
+  nav label input {
+    width: 40%;
+  }
+  .item__info .content {
+    font-size: 13px;
+  }
+  footer .footer__social a {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__logo h1 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  nav {
+    width: 70%;
+  }
+  nav label input {
+    width: 40%;
+  }
+  .gallery .gallery__item {
+    width: 26%;
+    margin: 3.5%;
+  }
+  .item__info .content {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header__logo h1 {
+    font-size: 22px;
+  }
+  nav ul {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    padding-top: 3px;
+    height: 40px;
+  }
+  .header__logo img {
+    width: 28px;
+    height: 33px;
+  }
+  .header__logo h1 {
+    font-size: 17px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav label {
+    display: none;
+  }
+  nav .mobile {
+    display: inline-block;
+  }
+  nav .mobile .mobile--search,
+  nav .mobile .mobile--menu {
+    display: inline-block;
+  }
+  nav .mobile .mobile--search {
+    margin-right: 20px;
+  }
+  .search--wrap {
+    background-color: #2f85c0;
+  }
+  .gallery .gallery__item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .header__logo {
+    width: 60%;
+  }
+  .gallery .gallery__item {
+    width: 50%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  footer .footer__social {
+    float: none;
+    width: 100%;
+  }
+  footer .footer__social a {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer .footer__social a {
+    margin-right: 7px;
+  }
+  footer .footer__social a:last-child {
+    margin-right: 0;
+  }
+  footer .footer__links,
+  footer .footer__steps,
+  footer .footer__contacts {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
+  footer .footer__links li,
+  footer .footer__steps li,
+  footer .footer__contacts li {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .gallery .gallery__item {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .search--wrap,
+  .nav--wrap {
+    display: none !important;
+  }
+}
