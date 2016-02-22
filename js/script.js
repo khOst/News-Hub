@@ -1,11 +1,3 @@
-$(window).scroll(function() {
-	var scrolled = $(this).scrollTop();
-	if (scrolled < 40) {
-		$('.nav--wrap').css('top','');
-	} else if (scrolled) {
-		$('.nav--wrap').css('top','0');
-	}
-});
 
 $(document).ready(function() {
 
@@ -36,4 +28,14 @@ $(document).ready(function() {
 		$(this).toggleClass('open');
 		$(this).toggleClass('closed');
 	});
+});
+
+// Mobile navigation
+$(window).scroll(function() {
+	var scrolled = $(this).scrollTop();
+	if (scrolled < 40) {
+		$('.nav--wrap').css('top','');
+	} else if (scrolled) {
+		$('.nav--wrap').css('top','0');
+	}
 });

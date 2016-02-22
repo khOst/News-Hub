@@ -5,13 +5,6 @@ $primary-color: #72a7d8;
 	font-family: OpenSans;
 }
 
-@font-face {
-	font-family: 'Myriad Pro Regular';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
-}
-
 body {
 	font-family: OpenSans, sans-serif;
 }
@@ -125,7 +118,7 @@ nav {
 	.mobile--search,
 	.mobile--menu {
 		display: none;
-		background: url('/img/header_sprite.png') no-repeat;
+		background: url('../img/header_sprite.png') no-repeat;
 		width: 20px;
 		height: 20px;
 		z-index: 111;
@@ -205,7 +198,7 @@ footer {
 			display: inline-block;
 			width: 36px;
 			height: 36px;
-			background: url('/img/icons_sprite.png') no-repeat;
+			background: url('../img/icons_sprite.png') no-repeat;
 			margin-bottom: 15px;
 			margin-right: 50px;
 		}
@@ -282,7 +275,7 @@ footer {
 		padding: 20px 20px;
 		background-color: #2f85bf;
 		div {
-			background: url('/img/header_sprite.png') no-repeat;
+			background: url('../img/header_sprite.png') no-repeat;
 			background-position: -20px 1px;
 			width: 20px;
 			height: 20px;
